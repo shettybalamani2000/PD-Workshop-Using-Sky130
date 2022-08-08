@@ -8,29 +8,29 @@ Started with open source EDA, OpenLANE directory structure and sky130
 
 ## Started with OpenLANE
 Openlane consists of many stages 
-1.Synthesis
+ 1.Synthesis
   i.	yosys - Performs RTL synthesis
  ii.	abc - Performs technology mapping
 iii.	OpenSTA - Performs static timing analysis on the resulting netlist to generate timing reports
-2.	Floorplan and PDN
+ 2.	Floorplan and PDN
   i.	init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
  ii.	ioplacer - Places the macro input and output ports
 iii.	pdn - Generates the power distribution network
  iv.	tapcell - Inserts welltap and decap cells in the floorplan
-3.	Placement
+ 3.	Placement
   i.	RePLace - Performs global placement
  ii.	Resizer - Performs optional optimizations on the design
 iii.	OpenPhySyn - Performs timing optimizations on the design
  iv.	OpenDP - Perfroms detailed placement to legalize the globally placed components
-4.	CTS
+ 4.	CTS
   i.	TritonCTS - Synthesizes the clock distribution network (the clock tree)
-5.	Routing *
+ 5.	Routing *
   i.	FastRoute - Performs global routing to generate a guide file for the detailed router
  ii.	TritonRoute - Performs detailed routing
 iii.	SPEF-Extractor - Performs SPEF extraction
-6.	GDSII Generation
+ 6.	GDSII Generation
  i.	Magic - Streams out the final GDSII layout file from the routed def
-7.	Checks
+ 7.	Checks
  i.	Magic - Performs DRC Checks & Antenna Checks
 ii.	Netgen - Performs LVS Checks
 
@@ -153,8 +153,12 @@ tps://user-images.githubusercontent.com/110526797/183350364-dabe51fe-43b3-489d-a
 # DAY-5 
 Power Distribution Network
 •	The gen_pdn command was used to generate the pdn file
+  ![Screenshot (179)](https://user-images.githubusercontent.com/110526797/183442430-63d34988-480d-42ff-8078-5fd4f043bf1c.png)
 ### Routing
   ![image](https://user-images.githubusercontent.com/110526797/183351531-99857e60-35b5-480d-bace-7fd7ba815f94.png)
+### Routing Layout
+  ![Screenshot (177)](https://user-images.githubusercontent.com/110526797/183442859-97c18520-bf92-45a2-abb7-8cd4ccedc92b.png)
+  ![Screenshot (177)](https://user-images.githubusercontent.com/110526797/183443402-aacb0024-2f50-4519-954b-af628f3080ef.png)
 
   
   
