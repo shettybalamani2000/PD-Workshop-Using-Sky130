@@ -1,12 +1,12 @@
 # PD-Workshop-Using-Sky130
 It’s a 5-day workshop of 5days on system on chip Design planning in OpenLANE flow using Google-skywater 130nm PDK.
 
-DAY-1
+# DAY-1
 Started with open source EDA, OpenLANE directory structure and sky130
 ![image](https://user-images.githubusercontent.com/110526797/183294393-9e7b768e-823b-41b4-b7c1-ee2438d06a27.png)
 ![image](https://user-images.githubusercontent.com/110526797/183294420-0819398a-aaa2-4807-8eea-528a231601d5.png)
 
-Started with OpenLANE
+## Started with OpenLANE
 Openlane consists of many stages 
 1.Synthesis
   i.	yosys - Performs RTL synthesis
@@ -34,7 +34,7 @@ iii.	SPEF-Extractor - Performs SPEF extraction
  i.	Magic - Performs DRC Checks & Antenna Checks
 ii.	Netgen - Performs LVS Checks
 
-Initialising openlane
+## Initialising openlane
 docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6/openlane$docker
 bash-4.2$ ./fow.tcl -interactive
 %package require openlane 0.9
@@ -43,7 +43,7 @@ bash-4.2$ ./fow.tcl -interactive
 ![image](https://user-images.githubusercontent.com/110526797/183294649-948f04aa-73c2-4fc9-bf46-f53f3cda3bdf.png)
 ![image](https://user-images.githubusercontent.com/110526797/183294664-db2b867a-1611-4183-9155-aedc6c889fc5.png)
 
-RUN SYNTHESIS
+## RUN SYNTHESIS
 ![image](https://user-images.githubusercontent.com/110526797/183294745-5357e0b3-6f5f-453a-943c-0fcc9fe6b4c8.png)
 
 FLOP and BUFFER RATIO
